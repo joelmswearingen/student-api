@@ -8,7 +8,7 @@ let db = {};
 let sequelize;
 
 if (config.use_env_variable) {
-    sequelize = new Sequelize(process.env[config.use-env-variable], config)
+    sequelize = new Sequelize(process.env[config.use_env_variable], config)
 } else {
     sequelize = new Sequelize(config)
 }
