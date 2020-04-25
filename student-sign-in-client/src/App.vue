@@ -36,7 +36,7 @@ export default {
       name: '',
     }
   },
-  mounted() {
+  mounted() {  // this is a fuctnion that happens as the app is loaded
     this.updateStudents()
   },
   methods: {

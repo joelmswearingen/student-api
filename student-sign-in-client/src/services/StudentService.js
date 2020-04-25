@@ -1,8 +1,8 @@
-import axios from 'axios'
+import axios from 'axios' // this requires axios to be brought into this file
 
 const base_url = '/api/students'
 
-export default {
+export default { // this export default line allows us to create functions to be use elsewhere via main.js
 
     getAllStudents() {
         return axios.get(base_url).then( response => {

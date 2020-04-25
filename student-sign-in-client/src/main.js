@@ -11,8 +11,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 Vue.config.productionTip = false
 
-Vue.prototype.$student_api = StudentAPIService
+Vue.prototype.$student_api = StudentAPIService // Vue.prototype allows the StudentAPIService to be available to all other components in the app
 
-new Vue({
+new Vue({  // this renders and builds in the app on load 
   render: h => h(App),
 }).$mount('#app')
